@@ -1,0 +1,14 @@
+<div class="card mb-2 text-center bg-dark">
+    <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'No Name'"></shared-lazy-image>
+    <!-- cuando ustedes quieren decirle a Angular que el valor de algún atributo de algún elemento
+HTML es igual a una expresión de JavaScript, lo vamos a poner con llaves cuadradas.
+Con esto hacemos el binding del valor de una expresión.
+En este caso esa expresión va a ser de gif images como buscan el que diga el que dice down shift, punto -->
+    <!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top"> -->
+
+    <div class="card-body text-white">
+        <p class="card-text">
+            {{gif.title || 'No Title'}}
+        </p>
+    </div>
+</div>
